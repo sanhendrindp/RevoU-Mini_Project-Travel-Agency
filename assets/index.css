@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #e9e9e9; */
+  margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(left, #e0e0e0, rgb(255, 190, 70));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2,
+h3 {
+  color: #342c2a;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  /* background: white; */
+  background: -webkit-linear-gradient(left, white, rgb(250, 250, 250));
+  border-bottom: 0px solid black;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  color: #342c2a;
+}
+
+li,
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #342c2a;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #ff9c1a;
+}
+
+.slider-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 98%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 3px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #fafafa;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#content {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#content p {
+  text-align: justify;
+}
+
+#sub-content {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#sub-content {
+  text-align: justify;
+}
+
+.main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.side-image {
+  width: 50%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.information-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.information-list li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.list-number {
+  background-color: rgb(151, 149, 149);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  padding: 20px 50px;
+  margin-top: 50px;
+  background: white;
+}
+
+.card-contact {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 50px;
+  background: white;
+  margin-left: 20px;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+aside {
+  /* float: right; */
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+#sub-content {
+  float: left;
+  width: 100%;
+}
+
+.contact {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact .form-title {
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-title img {
+  width: 100px;
+  height: 100px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  padding: 10px;
+}
+
+.input select {
+  padding: 10px;
+}
+
+.package-title h2 {
+  text-align: center;
+}
+
+.package-title p {
+  text-align: center;
+}
+
+.package-info img {
+  width: 100px;
+  height: 100%;
+}
+
+.package-info {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+
+.package-card {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  gap: 30px;
+}
+
+#promo h2,
+p {
+  text-align: center;
+}
+
+.promo-card {
+  width: 50%;
+  align-content: center;
+  margin: auto;
+}
+
+.small-note {
+  font-size: 13px;
+  color: gray;
+}
+
+span {
+  color: red;
+}
+
+.btn-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.btn-promo button {
+  background: rgb(68, 67, 67);
+  color: white;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.btn-promo button:hover {
+  color: #ff9c1a;
+}
+
+footer {
+  margin-top: 40px;
+  font-family: 'Lora', sans-serif;
+  border-radius: 50px 50px 0 0;
+  background: rgb(68, 67, 67);
+  height: auto;
+  width: 100%;
+  padding-top: 20px;
+  color: white;
+  box-shadow: inset;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h2 {
+  color: white;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+  padding-left: 0;
+  margin-bottom: 16px;
+}
+
+.social li {
+  margin: 0 10px;
+}
+
+.social a {
+  color: white;
+}
+
+.social a i {
+  font-size: 1.5rem;
+}
+
+.social a:hover i {
+  color: #ff9c1a;
+}
+
+@media screen and (max-width: 1000px) {
+  /* #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  table {
+    margin: 10px auto;
+  }
+  .side-image {
+    width: 100%;
+  }
+  li,
+  a {
+    font-size: 16px;
+  } */
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .package-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .card-contact {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+  .package-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .card-contact {
+    width: 100%;
+  }
+}
